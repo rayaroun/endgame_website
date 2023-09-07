@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chess Endgame Trainer</title>
+        
+        <!-- CSS for Chessboard -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='chessboard.css') }}">
+        
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+        
+        <!-- JS for Chessboard -->
+        <script src="{{ url_for('static', filename='chessboard.js') }}" defer></script>
+        
+        <!-- Custom Chess Logic -->
+        <script src="{{ url_for('static', filename='chess_logic.js') }}" defer></script>
+    </head>
+    
+
+<body onload="initializeBoard()">
+    <div id="board" style="width: 400px;"></div>
+</body>
+
+</html>
